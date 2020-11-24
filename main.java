@@ -3,7 +3,12 @@ package com.company.Kontroltöö2;
 import java.util.HashMap;
 import java.util.Map;
 
-public class main {
+class HeaBurger {      
+  public void HeaBurks() {                     
+    System.out.println("Kristjani burgerid on parimad!");
+  }
+}
+public class main extends HeaBurger{
     public static void main(String[] args) {
         Map<Burger, LisaLisand> Menüü = new HashMap<>();
         Burger ChickenBurger = new Burger("Chicken burger", "kana", 4.25, "valge sai");
@@ -28,6 +33,7 @@ public class main {
         telli.BurgerChoice();
         telli.AdditionChoice();
         telli.finalPrice();
-
+        
+        ChickenBurger.HeaBurks();
     }
 }
